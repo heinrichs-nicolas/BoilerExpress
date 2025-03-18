@@ -15,6 +15,9 @@ app.use(cors(corsOptions));
 // built-in middleware to handle urlencoded form data
 app.use(express.urlencoded({ extended: false }));
 
+//built-in middleware to communicate with the server using JSON. this middleware parses the JSON data and makes it available in req.body.
+app.use(express.json());
+
 // built-in middleware for json 
 app.use(express.json());
 
